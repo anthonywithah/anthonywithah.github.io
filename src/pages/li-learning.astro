@@ -1,0 +1,64 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import certifications from '~/data/li-learn.json';
+import { Icon } from 'astro-icon/components';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+---
+
+<Layout metadata={{ title: 'LinkedIn Learning certifications' }}>
+  <!-- Force light background + dark text for this page -->
+  <div class="bg-white text-gray-900 dark:bg-white dark:text-gray-900 min-h-screen p-6">
+    <h1 class="text-2xl font-bold mb-6">LinkedIn Learning certifications</h1>
+
+    <ul class="space-y-6">
+      {
+        certifications.map((cert) => (
+          <li class="border-b pb-4 last:border-b-0">
+            <div class="flex items-start gap-3">
+              {/* LinkedIn logo */}
+              <Icon name="tabler:brand-linkedin-filled" class="text-[#0077b5] w-12 h-12 flex-shrink-0" />
+
+              <div class="flex-1 text-sm leading-relaxed">
+                <h3 class="font-semibold text-base mb-0.5">{cert.title}</h3>
+                <p class="text-xs text-gray-600">{cert.issuer}</p>
+                <p class="text-xs text-gray-500">Issued {cert.issued}</p>
+
+                <a
+                  href={cert.credential_url}
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-2 mt-3 mb-2 px-4 py-1 border border-gray-800 rounded-full bg-transparent text-gray-800 text-xs font-medium hover:bg-gray-100 transition"
+                >
+                  Show credential
+                  <Icon name="tabler:external-link" class="w-4 h-4" />
+                </a>
+
+                {cert.skills && cert.skills.length > 0 && (
+                  <p class="mt-2 text-xs">
+                    <strong>Skills:</strong> {cert.skills.join(' · ')}
+                  </p>
+                )}
+              </div>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: '@anthonywithah',
+        href: 'https://www.linkedin.com/in/anthonywithah',
+        target: '_blank',
+        icon: 'tabler:brand-linkedin',
+      },
+    ]}
+    title="Learn more about me on LinkedIn"
+    subtitle="My experience, skills, education and more."
+  />
+</Layout>

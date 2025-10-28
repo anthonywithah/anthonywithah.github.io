@@ -1,11 +1,8 @@
 ---
 import Layout from '~/layouts/Layout.astro';
 import Header from '~/components/widgets/Header.astro';
-import Footer from '~/components/widgets/Footer.astro';
-import Announcement from '~/components/widgets/Announcement.astro';
-
+import Sidebar from '~/components/widgets/Sidebar.astro';
 import { headerData, footerData } from '~/navigation';
-
 import type { MetaData } from '~/types';
 
 export interface Props {
@@ -16,16 +13,38 @@ const { metadata } = Astro.props;
 ---
 
 <Layout metadata={metadata}>
+  <!-- ANNOUNCEMENT BAR DISABLED
   <slot name="announcement">
     <Announcement />
   </slot>
+ANNOUNCEMENT BAR DISABLED -->
+
   <slot name="header">
-    <Header {...headerData} isSticky showRssFeed showToggleTheme />
+    <!-- EDIT: keep burger menu for mobile, hide desktop nav -->
+    <Header
+      {...headerData}
+      isSticky={false}
+      showRssFeed
+      showToggleTheme
+      showDesktopNav={false}
+      showDesktop={false}
+      socialLinks={footerData.socialLinks}
+    />
   </slot>
-  <main>
-    <slot />
-  </main>
+
+  <!-- EDIT -->
+  <!-- Sidebar + main content -->
+  <div class="flex">
+    <Sidebar links={headerData.links} socialLinks={footerData.socialLinks} />
+    <main class="flex-1 md:ml-64">
+      <slot />
+    </main>
+  </div>
+
+  <!-- EDIT: HIDE FOOTER
   <slot name="footer">
     <Footer {...footerData} />
   </slot>
 </Layout>
+<!-- EDIT: HIDE FOOTER --></Layout
+>

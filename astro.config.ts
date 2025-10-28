@@ -32,18 +32,9 @@ export default defineConfig({
     mdx(),
     icon({
       include: {
-        tabler: ['*'],
-        'flat-color-icons': [
-          'template',
-          'gallery',
-          'approval',
-          'document',
-          'advertising',
-          'currency-exchange',
-          'voice-presentation',
-          'business-contact',
-          'database',
-        ],
+        tabler: ['*'], // all Tabler icons
+        'flat-color-icons': ['*'], // EDIT: all Flat Color Icons
+        'fluent-color': ['*'], // EDIT: all Fluent UI System Color Icons
       },
     }),
 

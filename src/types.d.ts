@@ -138,7 +138,10 @@ export interface Item {
   icon?: string;
   classes?: Record<string, string>;
   callToAction?: CallToAction;
-  image?: Image;
+  image?: string;
+  image?: string | ImageMetadata; // allows both string paths and imported images
+  skillsicon?: string; // skill icons
+  link?: string; // clickable panels
 }
 
 export interface Price {
@@ -276,6 +279,14 @@ export interface Content extends Omit<Headline, 'classes'>, Widget {
   isReversed?: boolean;
   isAfterContent?: boolean;
   callToAction?: CallToAction;
+}
+
+// Sidebar
+export interface MenuLink {
+  text: string;
+  href?: string;
+  icon?: string;
+  external?: boolean;
 }
 
 export interface Contact extends Omit<Headline, 'classes'>, Form, Widget {}

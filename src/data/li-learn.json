@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Scrum: Advanced",
+    "issuer": "LinkedIn",
+    "issued": "Oct 2024",
+    "credential_url": "https://www.linkedin.com/learning/certificates/d9bddadf40c9495193ec57305aaec28fd998ead99d9c23bfd75bd8759f6a1aa6",
+    "skills": ["Scrum"]
+  },
+  {
+    "title": "Microsoft 365 Copilot First Look",
+    "issuer": "LinkedIn",
+    "issued": "Dec 2023",
+    "credential_url": "https://www.linkedin.com/learning/certificates/347d452faddd77cec2210995db8047c6bef66d3f8952ef986a79c6511ce68f46",
+    "skills": ["Artificial Intelligence for Business"]
+  },
+  {
+    "title": "SQL: Data Reporting and Analysis",
+    "issuer": "LinkedIn",
+    "issued": "May 2023",
+    "credential_url": "https://www.linkedin.com/learning/certificates/9be48c6ee84e489f3b484213e4e9485c8c3c867c0c2048e85ed6ebccb644652e",
+    "skills": ["SQL", "Data Analysis"]
+  },
+  {
+    "title": "Microsoft Security, Compliance, and Identity (SC-900) Cert Prep",
+    "issuer": "LinkedIn",
+    "issued": "Apr 2023",
+    "credential_url": "https://www.linkedin.com/learning/certificates/e856cd125cfb2412a97520fbfb45eeac657146cd1990e9fc55775f1be7c4bcf6",
+    "skills": ["Enterprise Network Security"]
+  },
+  {
+    "title": "Agile Project Manager",
+    "issuer": "LinkedIn",
+    "issued": "Dec 2022",
+    "credential_url": "https://www.linkedin.com/learning/certificates/f082a33a6822f83feaf1e25905b005ccf7a670d848ac30621c7979a438f22af4",
+    "skills": ["Microsoft Project", "Project Management", "Agile Project Management"]
+  },
+  {
+    "title": "Microsoft Azure Administrator (AZ-104) Cert Prep",
+    "issuer": "LinkedIn",
+    "issued": "Dec 2022",
+    "credential_url": "https://www.linkedin.com/learning/certificates/0089170c393e34034bae2b9aaff3cd6df2a9f9694c57e64519b1a52fd872b4ea",
+    "skills": ["Microsoft Azure"]
+  },
+  {
+    "title": "Microsoft 365 (MS-900) Cert Prep",
+    "issuer": "LinkedIn",
+    "issued": "Nov 2022",
+    "credential_url": "https://www.linkedin.com/learning/certificates/313a499fec572bd7bf5ff6f679f9e8f9210a1fa1df3fd374758f1a80b0611bfb",
+    "skills": ["Microsoft 365"]
+  },
+  {
+    "title": "Microsoft 365 Identity and Services (MS-100) Cert Prep",
+    "issuer": "LinkedIn",
+    "issued": "Nov 2022",
+    "credential_url": "https://www.linkedin.com/learning/certificates/620db274c025de5ee03bd60fcaacdfe26b6bff40ea030a33728d24e79b71738e",
+    "skills": ["Microsoft 365"]
+  },
+  {
+    "title": "Microsoft 365 Mobility and Security (MS-101) Cert Prep",
+    "issuer": "LinkedIn",
+    "issued": "Nov 2022",
+    "credential_url": "https://www.linkedin.com/learning/certificates/30fde3f343a073cfe05b6653e45c6a6cccde29fb0b3dcc35b16b1554be7a4c9c",
+    "skills": ["Microsoft 365"]
+  },
+  {
+    "title": "CompTIA: Cybersecurity Analyst + (CySA+) (CS0-002) Cert Prep",
+    "issuer": "LinkedIn",
+    "issued": "Nov 2022",
+    "credential_url": "https://www.linkedin.com/learning/certificates/2f3d0ad52dc6ef8ee6483802ec1becab259e20d6e90c53cf5a2c167968a93e0a",
+    "skills": ["Enterprise Network Security", "Cybersecurity"]
+  },
+  {
+    "title": "Certified Analytics Professional (CAP) Cert Prep",
+    "issuer": "LinkedIn",
+    "issued": "May 2022",
+    "credential_url": "https://www.linkedin.com/learning/certificates/d6e6a8421b4c71929b3ab5198dd49e642affc39a8d2bbeaa182f4b113045c531",
+    "skills": ["Data Analysis"]
+  },
+  {
+    "title": "ITIL 4 Foundation Cert Prep",
+    "issuer": "LinkedIn",
+    "issued": "May 2022",
+    "credential_url": "https://www.linkedin.com/learning/certificates/512d67873f9fb8792ef3087e094db80326e4aa8512a956897172281ba4f1b0b3",
+    "skills": ["IT Service Management"]
+  },
+  {
+    "title": "CompTIA: Security+ (SY0-601) Cert Prep",
+    "issuer": "LinkedIn",
+    "issued": "May 2022",
+    "credential_url": "https://www.linkedin.com/learning/certificates/8555c5234d920b5f9df81e2c12c854d18e2bd48bde915b8e799c3b476d8c5af8",
+    "skills": ["Network Security"]
+  },
+  {
+    "title": "CompTIA: Network+ (N10-008) Cert Prep",
+    "issuer": "LinkedIn",
+    "issued": "May 2022",
+    "credential_url": "https://www.linkedin.com/learning/certificates/9443eaffb4826ec058ad533616485514df2b2fdd700f13ea1c93d70caa69c320",
+    "skills": ["Networking"]
+  },
+  {
+    "title": "CompTIA: A+ (220-1001 & 220-1002) Cert Prep",
+    "issuer": "LinkedIn",
+    "issued": "Apr 2022",
+    "credential_url": "https://www.linkedin.com/learning/certificates/7cbd456cc48ad2738972cbfcc147ccdf110327f47a6b3807bcdccd26a1b10398",
+    "skills": ["System Administration", "Troubleshooting"]
+  }
+]
