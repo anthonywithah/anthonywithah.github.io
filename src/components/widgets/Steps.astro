@@ -9,8 +9,8 @@ const {
   subtitle = await Astro.slots.render('subtitle'),
   tagline = await Astro.slots.render('tagline'),
   items = [],
-  image, // single image
-  images = [], // multiple images
+  image,
+  images = [],
   isReversed = false,
 
   id,
@@ -19,7 +19,6 @@ const {
   bg = await Astro.slots.render('bg'),
 } = Astro.props;
 
-// Normalize: always work with an array
 const normalizedImages = images.length ? images : image ? [image] : [];
 ---
 
@@ -48,7 +47,11 @@ const normalizedImages = images.length ? images : image ? [image] : [];
           title: 'text-3xl lg:text-4xl',
           ...((classes?.headline as object) ?? {}),
         }}
-      />
+      >
+        <!-- EDIT: BADGES -->
+        <slot slot="badges" name="badges" />
+      </Headline>
+
       <Timeline items={items} classes={classes?.items as Record<string, never>} />
     </div>
 

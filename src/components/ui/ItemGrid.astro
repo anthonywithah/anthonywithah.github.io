@@ -69,22 +69,29 @@ for (const [path, mod] of Object.entries(SkillIcons)) {
               href={link}
               target={link ? '_blank' : undefined}
               rel={link ? 'noopener noreferrer' : undefined}
-              class={twMerge('flex flex-row max-w-md hover:opacity-80 transition', panelClass, itemClasses?.panel)}
+              class={twMerge('flex flex-row items-center max-w-md', panelClass, itemClasses?.panel)}
             >
               {/* === ICON AREA === */}
-              <div class="flex justify-center">
-                {IconComp ? (
-                  <IconComp class={twMerge('w-7 h-7 mr-2 rtl:mr-0 rtl:ml-2', defaultIconClass, itemClasses?.icon)} />
-                ) : icon || defaultIcon ? (
-                  <Icon
-                    name={icon || defaultIcon}
-                    class={twMerge('w-7 h-7 mr-2 rtl:mr-0 rtl:ml-2', defaultIconClass, itemClasses?.icon)}
-                  />
-                ) : null}
-              </div>
+              {(IconComp || icon || defaultIcon) && (
+                <div class="flex items-center justify-center mr-1 rtl:ml-1 rtl:mr-0">
+                  <div
+                    class={twMerge(
+                      'flex items-center justify-center text-white bg-primary rounded-full w-10 h-10 md:w-12 md:h-12 opacity-90',
+                      defaultIconClass,
+                      itemClasses?.icon
+                    )}
+                  >
+                    {IconComp ? (
+                      <IconComp class="w-5 h-5 md:w-6 md:h-6" />
+                    ) : (
+                      <Icon name={icon || defaultIcon} class="w-5 h-5 md:w-6 md:h-6" />
+                    )}
+                  </div>
+                </div>
+              )}
 
               {/* === TEXT AREA === */}
-              <div class="mt-0.5 flex flex-col">
+              <div class="flex flex-col">
                 {title && <h3 class={twMerge('text-xl font-bold', titleClass, itemClasses?.title)}>{title}</h3>}
 
                 {description && (

@@ -1,0 +1,29 @@
+---
+// CUSTOM
+
+interface BadgeItem {
+  label: string;
+  color?: string;
+  text?: string;
+  href?: string;
+}
+
+let { items } = Astro.props as { items: BadgeItem | BadgeItem[] };
+const badges = Array.isArray(items) ? items : [items];
+---
+
+<div class="flex flex-wrap gap-1 mb-2">
+  {
+    badges.map((item) => {
+      const baseClasses = `inline-block px-2 py-0.5 text-xs leading-none font-normal tracking-tight rounded-sm font-[Verdana,DejaVu Sans,sans-serif] ${item.color ?? 'bg-gray-600'} ${item.text ?? 'text-white'} text-opacity-80`;
+
+      return item.href ? (
+        <a href={item.href} class={baseClasses}>
+          {item.label}
+        </a>
+      ) : (
+        <span class={baseClasses}>{item.label}</span>
+      );
+    })
+  }
+</div>
